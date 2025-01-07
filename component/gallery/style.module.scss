@@ -1,0 +1,131 @@
+.gallary {
+    margin: 0 5vw;
+
+
+    .gallary_grid {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+
+
+
+        .gallary_item {
+
+
+
+
+            .gallary_item__content {
+                display: grid;
+                grid-template-rows: 1fr min-content;
+                height: 100%;
+
+
+
+
+
+                .gallary_item__image_container {
+                    background-color: #f4f5f6;
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .gallary_item__image_prop {
+                    padding: 6px;
+                    font-size: 12px;
+
+                    
+                    .gallary_item__image_title {
+                        font-weight: 400;
+                    }
+
+                    .gallary_item__image_size {
+                        color: #111111;
+                    }
+
+                    .gallary_item__image_price {
+                        color: green;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1400px) {
+    .gallary_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+
+        .gallary_item {
+            height: 25vw
+        }
+    }
+}
+
+@media all and (min-width: 800px) and (max-width: 1400px) {
+    .gallary_grid {
+        grid-template-columns: 1fr 1fr;
+
+
+        .gallary_item {
+            height: 40vw
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    .gallary_grid {
+        grid-template-columns: 1fr;
+
+
+        .gallary_item {
+            height: 110vw;
+        }
+    }
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+    /* Portrait styles here */
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+    /* Landscape styles here */
+}
+
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation:portrait) {}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation:portrait) {}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation:landscape) {}

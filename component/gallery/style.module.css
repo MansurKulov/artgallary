@@ -1,0 +1,73 @@
+.gallary {
+  margin: 0 5vw;
+}
+.gallary .gallary_grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  height: 100%;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content .gallary_item__image_container {
+  background-color: #f4f5f6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content .gallary_item__image_prop {
+  padding: 6px;
+  font-size: 12px;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content .gallary_item__image_prop .gallary_item__image_title {
+  font-weight: 400;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content .gallary_item__image_prop .gallary_item__image_size {
+  color: #111111;
+}
+.gallary .gallary_grid .gallary_item .gallary_item__content .gallary_item__image_prop .gallary_item__image_price {
+  color: green;
+}
+
+@media all and (min-width: 1400px) {
+  .gallary_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gallary_grid .gallary_item {
+    height: 25vw;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1400px) {
+  .gallary_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gallary_grid .gallary_item {
+    height: 40vw;
+  }
+}
+@media all and (max-width: 800px) {
+  .gallary_grid {
+    grid-template-columns: 1fr;
+  }
+  .gallary_grid .gallary_item {
+    height: 110vw;
+  }
+}
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
+/* CSS for iPhone, iPad, and Retina Displays */
+/* Non-Retina */
+/* Retina */
+/* iPhone Portrait */
+/* iPhone Landscape */
+/* iPad Portrait */
+/* iPad Landscape *//*# sourceMappingURL=style.module.css.map */
