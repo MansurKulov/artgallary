@@ -73,7 +73,7 @@ export default function Home() {
               <div className={s.gallary_item__content}>
                 <div className={s.gallary_item__image_container}>
                   <img
-                    src={`https://artdb.local/${item.image}`}
+                    src={`http://vkatun.42web.io/${item.image}`}
                     alt={`image-${index}`}
                     style={{ width: '100%', objectFit: 'cover' }}
                   />
