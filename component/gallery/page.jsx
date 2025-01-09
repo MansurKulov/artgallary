@@ -11,7 +11,7 @@ export default function Home() {
   // Загружаем изображения с сервера
   async function fetchImages() {
     try {
-      const response = await axios.get('https://artdb.local/get_images.php');
+      const response = await axios.get('http://vkatun.42web.io/get_images.php');
       if (response.data.success) {
         setImages(response.data.images || []); // Обеспечиваем, что images всегда будет массивом
       } else {
