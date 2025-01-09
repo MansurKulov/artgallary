@@ -11,7 +11,7 @@ export default function Home() {
   // Загружаем изображения с сервера
   async function fetchImages() {
     try {
-      const response = await axios.get('http://vkatun.42web.io/get_images.php');
+      const response = await axios.get('https://vkatun.42web.io/get_images.php');
       if (response.data.success) {
         setImages(response.data.images || []); // Обеспечиваем, что images всегда будет массивом
       } else {
@@ -73,7 +73,7 @@ export default function Home() {
               <div className={s.gallary_item__content}>
                 <div className={s.gallary_item__image_container}>
                   <img
-                    src={`http://vkatun.42web.io/${item.image}`}
+                    src={`https://vkatun.42web.io/${item.image}`}
                     alt={`image-${index}`}
                     style={{ width: '100%', objectFit: 'cover' }}
                   />
